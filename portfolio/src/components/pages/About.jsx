@@ -1,8 +1,8 @@
-function Footer() {
+function About() {
     return (
       <div> Sofia Villalpando </div>
     );
   }
   
-export default Footer;
+export default About;
   

@@ -1,8 +1,8 @@
 const projects = [
     {
         id: 1,
-        projectName: "",
-        description: ""
+        projectName: "Fist Project",
+        description: "This was a very fun project we worked on"
     }
 ]
 
