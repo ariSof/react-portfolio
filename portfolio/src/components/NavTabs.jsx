@@ -2,6 +2,8 @@
 // We destructure the props
 function NavTabs({ currentPage, handlePageChange }) {
     return (
+        <div>
+            <h1> Personal Portfolio </h1>
       <ul className="nav nav-tabs">
         <li className="nav-item">
           <a
@@ -51,6 +53,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           </a>
         </li>
       </ul>
+      </div>
     );
   }
   

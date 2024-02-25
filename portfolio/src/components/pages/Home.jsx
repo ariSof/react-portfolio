@@ -1,8 +1,15 @@
+import About from './About';
 import Project from './Project';
+import Contact from './Contact';
 
 function Home() {
     return (
-        <Project />
+        <div>
+            <About />
+            <Project />
+            <Contact />
+        </div>
+        
     );
   }
   
