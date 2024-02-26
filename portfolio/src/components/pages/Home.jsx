@@ -9,7 +9,6 @@ function Home() {
             <Project />
             <Contact />
         </div>
-        
     );
   }
   
