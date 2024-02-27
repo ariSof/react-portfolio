@@ -1,10 +1,27 @@
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
+import Row from 'react-bootstrap/Row';
+
+
 function NavTabs({ currentPage, handlePageChange }) {
     return (
-        <div>
-            <h1> Personal Portfolio </h1>
+        <div className="block">
+            <div id="hero" style={{display: 'flex'}} >
+                <h1> Sofia's Personal Portfolio </h1>
+                
+                <Container>
+                    <Row>
+                        <Col xs={6} md={4}>
+                            <Image src="https://res.cloudinary.com/dwjrsllb0/image/upload/v1708928222/personal/photoS_uh6a8u.jpg" rounded alt='picture of Sofia' />
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
             <ul className="nav nav-tabs">
                 <li className="nav-item">
                     <a
+                        
                         href="#home"
                         onClick={() => handlePageChange('Home')}
                         //  Using Conditional or Ternary operator
