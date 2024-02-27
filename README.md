@@ -3,6 +3,8 @@
 ## Description
 
 This project is a personal portfolio of different projects I have worked on. It includes my name and a recent photo. There are navigation links to a section about me, my work, and how to contact me. Project samples include an image, title of the project, a short description and buttons to repo and a link to published site. 
+  
+Depoyed site: https://ubiquitous-custard-ddbce7.netlify.app/
 
 ## Installation
 
