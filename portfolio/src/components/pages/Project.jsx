@@ -6,26 +6,27 @@ const projects = [
     {
         id: 1,
         projectName: "Take a Hike",
-        description: "Build our own API using MySQL database and sequalizer. Search for a hike based on difficulty level.",
+        description: "This is meant to be a simple siteBuild our own API using MySQL database and sequalizer. Search for a hike based on difficulty level.",
         imgUrl:"https://res.cloudinary.com/dwjrsllb0/image/upload/v1708903380/personal/enigmatic-cliffs-38751-768457d3d919.herokuapp.com__1_gdtkbh.png",
         deploymentUrl:"https://enigmatic-cliffs-38751-768457d3d919.herokuapp.com/",
         gitHub: "https://github.com/ariSof/take-a-hike"
     },
     {
         id: 2,
+        projectName: "Can I Afford It?",
+        description: "In this project we calculate travel cost (flight + hotel) based on data entered. We gather the lowest flight available on choosen dates, to selected destination from TripAdvisor API and fetch cheapest hotel from Booking.com API.",
+        imgUrl:"https://res.cloudinary.com/dwjrsllb0/image/upload/v1708905392/personal/Screenshot_2024-01-10_at_1.25.50_PM_fbu6bh.png",
+        deploymentUrl:"https://sebjustseb.github.io/AffordIt-App/",
+        gitHub: "https://github.com/sebjustseb/AffordIt-App"
+        
+    },
+    {
+        id: 3,
         projectName: "Weather Dashboard",
         description: "Current weather page, search by city. 5 day forecast. Uses OpenWeather API and Bulma CSS library",
         imgUrl:"https://res.cloudinary.com/dwjrsllb0/image/upload/v1708901812/personal/screenshot_index.html_xdexpo.png",
         deploymentUrl:"https://arisof.github.io/weather-app/",
         gitHub: "https://github.com/ariSof/weather-app"
-    },
-    {
-        id: 3,
-        projectName: "Can I Afford It?",
-        description: "This project made use of existing APIs to fetch travel information based on data entered. ",
-        imgUrl:"https://res.cloudinary.com/dwjrsllb0/image/upload/v1708905392/personal/Screenshot_2024-01-10_at_1.25.50_PM_fbu6bh.png",
-        deploymentUrl:"https://sebjustseb.github.io/AffordIt-App/",
-        gitHub: "https://github.com/sebjustseb/AffordIt-App"
     },
     {
         id: 4,
@@ -54,17 +55,18 @@ function Project() {
                     projects.map((project) => { 
                         return (
             
-                            <Card bg="dark" text="white" border="dark" style={{ width: '40%', margin: '3%' }}>
-                            <Card.Img variant="top" src={project.imgUrl} />
-                            <Card.Body>
-                                <Card.Title>{`${project.projectName}`}</Card.Title>
-                                <Card.Text>
-                                {`${project.description}`}
-                                </Card.Text>
-                                <div className="d-grid gap-2">
-                                <Button variant="secondary" size="lg" href={project.deploymentUrl} >Go to Project</Button>
-                                </div>
-                            </Card.Body>
+                            <Card key={project.id} bg="dark" text="white" border="dark" style={{ width: '40%', margin: '3%' }}>
+                                <Card.Img variant="top" src={project.imgUrl} />
+                                <Card.Body>
+                                    <Card.Title>{`${project.projectName}`}</Card.Title>
+                                    <Card.Text>
+                                        {`${project.description}`}
+                                    </Card.Text>
+                                    <div className="d-grid gap-2">
+                                        <Button variant="secondary" size="lg" href={project.gitHub} > <img style={{ height: '30px'}} src='/images/github-mark-white.png'></img> Repo</Button>
+                                        <Button variant="secondary" size="lg" href={project.deploymentUrl} >Go to Project</Button>
+                                    </div>
+                                </Card.Body>
                             </Card>
                         );
                     })

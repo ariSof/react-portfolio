@@ -1,3 +1,11 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: larger;
+    color: black;
+}
+
 .roboto-thin {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
@@ -22,7 +30,7 @@
     font-style: normal;
   }
   
-  .roboto-bold {
+  h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -69,4 +77,52 @@
     font-weight: 900;
     font-style: italic;
   }
-  
+
+  .block {
+    margin:5%;
+  }
+
+  .block p {
+    font-size: larger;
+  }
+
+  .container {
+    display: flex;
+    justify-content: end;
+  }
+
+  .container img {
+    height: 170px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-item .nav-link {
+    color: black;
+  }
+
+  .nav-link .active {
+    font-weight: bold;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  .contactList li a {
+    color: black;
+    font-size: larger;
+  }
+
+  .card-text {
+    height: 120px;
+    overflow: auto;
+  }
+  #navbar {
+    overflow: hidden;
+  }
