@@ -8,7 +8,7 @@ function NavTabs({ currentPage, handlePageChange }) {
     return (
         <div className="block">
             <div id="hero" style={{display: 'flex'}} >
-                <h1> Sofia's Personal Portfolio </h1>
+                <h1> Sofia Villalpando's Personal Portfolio </h1>
                 
                 <Container>
                     <Row>
