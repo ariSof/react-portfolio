@@ -131,5 +131,9 @@ body {
     .cardRow {
         display: inline !important;
     }
+
+    .card{
+      width: 90% !important;
+    }
     
 }
